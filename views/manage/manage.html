@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>个人博客后台管理系统</title>
+    <link  href="/stylesheets/bootstrap.min.css" rel="stylesheet">
+
+    <!--HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries-->
+    <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <!--对IE8以下IE浏览器的样式的支持-->
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="/javascripts/jquery.min.js"></script>
+    <script src="/javascripts/bootstrap.min.js"></script>
+    <link rel='stylesheet' href='/stylesheets/manage.css' />
+    <link rel='stylesheet' href='/stylesheets/input.css' />
+
+</head>
+<body>
+
+    <div id="container" ng-controller="manageController">
+        <%- include input%>
+        <div class="col-md-2" id="container1" >
+            <div id="div_title1" class="div_title row">
+                <span>后台管理</span>
+            </div>
+            <div id="div_ul" class="row">
+                <ul>
+                    <li ng-click="updateMessage('li1')"><span>技术博文</span></li>
+                    <li ng-click="updateMessage('li2')"><span>生活日记</span></li>
+                    <li ng-click="updateMessage('li3')"><span>好文分享</span></li>
+                    <li ng-click="updateMessage('li4')"><span>精彩视频</span></li>
+                    <li ng-click="updateMessage('li5')"><span>酷炫图片</span></li>
+                    <li ng-click="updateMessage('li6')"><span>精美网页</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-10" id="container2">
+            <div id="div_title2" class="div_title">
+                <span ng-model="title">{{title}}</span>
+            </div>
+            <div id="div_cont_f">
+                <div class='container'id="div_add" ><div id="div_add_1" ng-click="create()"><span id="span_add">创建</span></div></div>
+                <div class='container'id="div_space"></div>
+                <div class="container" id="div_cont" ng-bind-html = "content">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        $('#div_add_1').click(function(){
+            open();
+        })
+        $('#input_close').click(function(){
+            close_input();
+        })
+        $('#container1').css("height",$('#container2').css("height"));
+        function open(){
+            document.getElementById("win_login").style.display="";
+
+//            document.getElementById("win_background").style.display="";
+//            document.getElementById("win_background").addEventListener('click',closeLogin);
+        }
+
+//        }
+        function close_input(){
+            document.getElementById("win_login").style.display="none";
+//            document.getElementById("win_background").style.display="none";
+//            document.getElementById("win_background").removeEventListener('click',closeLogin);
+        }
+    </script>
+    <script src="/javascripts/angular.min.js"></script>
+    <script src="/controls/manage.js"></script>
+</body>
+</html>

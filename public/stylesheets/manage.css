@@ -1,0 +1,93 @@
+#container{
+    /*height:1000px;*/
+}
+#container1{
+    height: inherit;
+    background-color: #204d74;
+    position: relative;
+    /*margin-bottom: 0px;*/
+}
+#container2{
+    height:100%;
+    background-color: whitesmoke;
+    padding-right:0px;
+    padding-left:0px;
+    position: relative;
+}
+.div_title{
+    height: 70px;
+    width: 100%;
+    position: fixed;
+}
+#div_title1{
+    background-color: #00B7FF;
+}
+#div_title2{
+    background-color: white;
+}
+#div_ul{
+    top:100px;
+    position: fixed;
+    /*padding-right: 10px;*/
+    /*margin-right: 10px;*/
+    width:100%;
+}
+#div_ul ul{
+    /*width: 400px;*/
+    padding-right: 10px;
+    list-style-image:url('http://img.baidu.com/img/iknow/icn_point.gif');
+}
+#div_ul li{
+    height: 50px;
+    border: 2px solid black;
+    width: 100%;
+    list-style:none;
+    list-style-image:url('http://img.baidu.com/img/iknow/icn_point.gif');
+}
+#div_cont_f{
+    margin-top:100px;
+    /*height: 100%;*/
+    /*position:absolute;*/
+    margin-bottom: 10px;
+    background-color: whitesmoke;
+    /*margin-right: 30px;*/
+}
+#div_add{
+    height: 50px;
+    width: 90%;
+    background-color: white;
+}
+#div_add div{
+    float: right;
+    height: 100%;
+    width: 100px;
+    background-color: green;
+    /*margin-right: 0px;*/
+}
+#div_space{
+    height: 50px;
+    width: 90%;
+    background-color: whitesmoke;
+}
+#div_cont {
+    /*box-shadow: 10px 10px 5px #888888;*/
+    /*margin-right: 30px;*/
+    /*right:30px;*/
+    /*margin-left: 30px;*/
+    width: 90%;
+    background-color: white;
+    height: 1000px;
+}
+.title{
+   font-size: 24px;
+   font-weight: 400;
+}
+.ajax_control{
+   background-color: #00B7FF;height: 100px;
+}
+.ajax_row{
+    margin-top:20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 2px solid black;
+}

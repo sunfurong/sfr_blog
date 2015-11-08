@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <div class="form-container" ng-controller="myController">
+        <p class="form-header">User Profile</p>
+        <form method="post" action="/user/update">
+            <label>Username:</label>
+            <input type="text" name="username" ng-model="user.name" disabled><br>
+            <label>Email:</label>
+            <input type="email" name="email" ng-model="user.email" ><br>
+
+        </form>
+    </div>
+</body>
+</html>

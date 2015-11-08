@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="firstApp">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <div ng-controller="FirstController">
+        <span>Name:</span>
+        <input type="text" ng-model="first">
+        <input type="text" ng-model="last">
+        <button ng-click="updateMessage()">Message</button>
+        <hr>
+        {{heading + message}}
+    </div>
+    <script src="/javascripts/angular.min.js"></script>
+    <script src="/controls/first.js"></script>
+</body>
+</html>
