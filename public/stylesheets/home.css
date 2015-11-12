@@ -9,3 +9,20 @@
 #content_footer{
 
 }
+
+.home-template{
+    background-image: url(http://static.ghostchina.com/image/6/d1/fcb3879e14429d75833a461572e64.jpg);
+    height:400px;
+
+}
+#nav{
+    height: 50px;
+}
+ul{
+    display: block;
+    list-style-type: disc;
+}
+li{
+    float:left;
+    list-style:none;
+}

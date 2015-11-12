@@ -12,7 +12,7 @@ firstApp.controller('manageController',function($scope,$sce,$http){
         if(data.data.length>0){
             var string='';
             for(var i=0;i<data.data.length;i++){
-                string =string+str_telblog(data.data[i].title,data.data[i].content);
+                string =string+str_telblog(data.data[data.data.length-i-1].title,data.data[data.data.length-i-1].content);
             }
             $scope.content=$sce.trustAsHtml(string);
         }
@@ -26,7 +26,7 @@ firstApp.controller('manageController',function($scope,$sce,$http){
                     if(data.data.length>0){
                         var string='';
                         for(var i=0;i<data.data.length;i++){
-                            string =string+str_telblog(data.data[i].title,data.data[i].content);
+                            string =string+str_telblog(data.data[data.data.length-i-1].title,data.data[data.data.length-i-1].content);
                         }
                         $scope.content=$sce.trustAsHtml(string);
                     }
